@@ -10,7 +10,7 @@ Creation
 ---------
 Creating a new lockable is very easy. Simply use the following syntax:
 
-> var lockable = new jLockable(<default value>);
+> var lockable = new jLockable(&lt;default value&gt;);
 
 - default value: The value you want the lockable to be initialized with.
 
@@ -27,13 +27,13 @@ Locking
 ---------
 To lock the variable value, there are two options. The first method, the simplest uses the following syntax:
 
-> lockable.Lock(<function: onUnlock>);
+> lockable.Lock(&lt;function: onUnlock&gt;);
 
 - (Optional) onUnlock: The function you want to have run upon the variable be unlocked.
 
 The second way to lock the value allows for you to specify an amount of time you want it locked for:
 
-> lockable.LockFor(<integer: time>, <function: onUnlock>);
+> lockable.LockFor(&lt;integer: time&gt;, &lt;function: onUnlock&gt;);
 
 - time: Amount of time in milliseconds you want the variable to be locked for.
 - (Optional) onUnlock: The function you want to have run upon the variable be unlocked.
